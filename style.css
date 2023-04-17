@@ -28,11 +28,27 @@
 
 body {
     color: var(--fc-body-copy);
+    background-color: var(--clr-off-white);
     font-size: var(--fs-body-copy);
 }
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    color: var(--fc-heading);
+    font-size: var(--fs-large);
+}
+
+.new-articles {
+    color: var(--clr-grayish-blue);
+    background-color: var(--clr-very-dark-blue);
 }
 
 .other-articles {
