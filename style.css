@@ -1,3 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-soft-orange: hsl(35, 77%, 62%);
+    --clr-soft-red: hsl(5, 85%, 63%);
+    --clr-off-white: hsl(36, 100%, 99%);
+    --clr-grayish-blue: hsl(233, 8%, 79%);
+    --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+    --clr-very-dark-blue: hsl(240, 100%, 5%);
+
+    font-family: 'Inter', sans-serif;
+    --fc-heading: var(--clr-very-dark-blue);
+    --fc-heading-inverted: var(--clr-off-white);
+    --fc-body-copy: var(--clr-dark-grayish-blue);
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+    --fs-body-copy: 0.9375rem;
+    --fs-xxlarge: calc(var(--fs-body-copy) * 2.75);
+    --fs-xlarge: calc(var(--fs-body-copy) * 2);
+    --fs-large: calc(var(--fs-body-copy) * 1.25);
+}
+
+body {
+    color: var(--fc-body-copy);
+    font-size: var(--fs-body-copy);
+}
+
+img {
+    max-width: 100%;
+}
+
+.other-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.other-articles article {
+    display: flex;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -5,4 +52,37 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Utility Classes */
+.fc-heading {
+    color: var(--fc-heading);
+}
+
+.fc-heading-inverted {
+    color: var(--fc-heading-inverted);
+}
+
+.fc-accent {
+    color: var(--clr-soft-orange);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-extra-bold {
+    font-weight: var(--fw-extra-bold);
+}
+
+.fs-xxlarge {
+    font-size: var(--fs-xxlarge);
+}
+
+.fs-xlarge {
+    font-size: var(--fs-xlarge);
+}
+
+.fs-large {
+    font-size: var(--fs-large);
 }
