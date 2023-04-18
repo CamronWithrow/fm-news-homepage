@@ -57,6 +57,10 @@ button {
     background-color: transparent;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .open-menu {
     margin-left: auto;
     max-height: 1.25rem;
@@ -94,7 +98,7 @@ nav {
     box-shadow: 0 0 1000px 2rem hsl(0, 0%, 0%);
 }
 
-.hide-navigation {
+nav[data-is-hidden="true"] {
     display: none;
     box-shadow: none;
 }
