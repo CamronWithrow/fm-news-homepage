@@ -34,6 +34,7 @@ body {
     padding: 1rem;
 }
 
+
 main {
     display: flex;
     flex-direction: column;
@@ -128,6 +129,12 @@ article {
     gap: 1rem;
 }
 
+.article-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .cta-button {
     background-color: var(--clr-soft-red);
     color: var(--fc-heading-inverted);
@@ -136,6 +143,7 @@ article {
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     max-width: 55%;
+    margin-top: auto;
 }
 
 .cta-button:hover {
@@ -203,6 +211,73 @@ article {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 50em) {
+    :root {
+        --fs-body-copy: 0.9375rem;
+        --fs-xxlarge: calc(var(--fs-body-copy) * 3.75);
+        --fs-xlarge: calc(var(--fs-body-copy) * 2);
+        --fs-large: calc(var(--fs-body-copy) * 1.25);
+    }
+
+    .logo {
+        max-height: 3rem;
+    }
+
+    .open-menu, .close-menu {
+        display: none;
+    }
+
+    nav {
+        color: var(--fc-body-copy);
+        font-size: var(--fs-body-copy);
+        position: relative;
+        height: auto;
+        width: auto;
+        margin: 0;
+        margin-left: auto;
+        box-shadow: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    body {
+        padding: 4rem 10rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hero   hero   new"
+            "footer footer footer";
+    }
+
+    .top-article {
+        grid-area: hero;
+    }
+
+    .new-articles {
+        grid-area: new;
+    }
+
+    .other-articles {
+        flex-direction: row;
+        grid-area: footer;
+    }
+
+    .article-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
 }
 
 /* Utility Classes */
