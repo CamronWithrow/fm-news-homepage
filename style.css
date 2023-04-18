@@ -244,6 +244,7 @@ article {
         display: flex;
         flex-direction: row;
         gap: 2.5rem;
+        padding: 0;
     }
 
     body {
