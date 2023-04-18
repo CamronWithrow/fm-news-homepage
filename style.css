@@ -138,6 +138,12 @@ button {
     max-width: 25%;
 }
 
+.decorative-number {
+    font-size: var(--fs-xlarge);
+    color: var(--clr-grayish-blue);
+    font-weight: var(--fw-bold);
+}
+
 .attribution {
     position: absolute;
     bottom: 0;
