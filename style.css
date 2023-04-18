@@ -57,7 +57,6 @@ button {
     background-color: transparent;
 }
 
-button:focus,
 button:hover {
     cursor: pointer;
 }
@@ -99,6 +98,10 @@ nav {
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 50%);
 }
 
+nav a:hover {
+    color: var(--clr-soft-red);
+}
+
 nav[data-is-hidden="true"] {
     display: none;
     box-shadow: none;
@@ -135,10 +138,21 @@ article {
     max-width: 55%;
 }
 
+.cta-button:hover {
+    color: var(--clr-off-white);
+    background-color: var(--clr-very-dark-blue);
+}
+
 .new-articles {
     color: var(--clr-grayish-blue);
     background-color: var(--clr-very-dark-blue);
     padding: 1.325rem;
+
+    --active-color: var(--clr-soft-orange);
+}
+
+.new-articles h3:hover {
+    color: var(--active-color);
 }
 
 .new-articles>article {
@@ -156,6 +170,12 @@ article {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 4rem;
+
+    --active-color: var(--clr-soft-red);
+}
+
+.other-articles h2:hover {
+    color: var(--active-color);
 }
 
 .row-article {
