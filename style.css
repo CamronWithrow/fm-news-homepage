@@ -52,7 +52,12 @@ header {
     max-height: 1.75rem;
 }
 
-.menu {
+button {
+    border: 0px;
+    background-color: transparent;
+}
+
+.open-menu {
     margin-left: auto;
     max-height: 1.25rem;
 }
@@ -75,18 +80,38 @@ li {
 }
 
 nav {
-    display: none;
     color: var(--fc-heading);
+    background-color: var(--clr-off-white);
     font-size: var(--fs-large);
     position: absolute;
     right: 0;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 66vw;
+    margin: -1rem;
+    box-shadow: 0 0 1000px 2rem hsl(0, 0%, 0%);
+}
+
+.hide-navigation {
+    display: none;
+    box-shadow: none;
+}
+
+.close-menu {
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 1.5rem;
+    padding: 1.5rem;
 }
 
 article {
@@ -95,9 +120,8 @@ article {
     gap: 1rem;
 }
 
-button {
+.cta-button {
     background-color: var(--clr-soft-red);
-    border: none;
     color: var(--fc-heading-inverted);
     font-weight: var(--fw-bold);
     padding: 1rem;
@@ -186,4 +210,8 @@ button {
 
 .fs-large {
     font-size: var(--fs-large);
+}
+
+.no-scroll {
+    overflow: hidden;
 }
