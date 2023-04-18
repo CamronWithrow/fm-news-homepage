@@ -17,8 +17,10 @@ const mediaQuery = window.matchMedia('(max-width: 50em)');
 
 mediaQuery.addEventListener("change", () => {
     if (mediaQuery.matches) {
+        document.getElementById("main-img").src = "assets/images/image-web-3-mobile.jpg"
         navigation.dataset.isHidden = true;
     } else {
+        document.getElementById("main-img").src = "assets/images/image-web-3-desktop.jpg"
         navigation.dataset.isHidden = false;
     }
 });
