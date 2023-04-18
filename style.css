@@ -84,6 +84,14 @@ article {
     gap: 1rem;
 }
 
+button {
+    background-color: var(--clr-soft-red);
+    border: none;
+    font: inherit;
+    padding: 1rem;
+    font-weight: var(--fw-bold);
+}
+
 .row-article {
     flex-direction: row;
 }
