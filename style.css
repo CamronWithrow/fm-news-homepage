@@ -57,6 +57,7 @@ button {
     background-color: transparent;
 }
 
+button:focus,
 button:hover {
     cursor: pointer;
 }
@@ -95,7 +96,7 @@ nav {
     height: 100vh;
     width: 66vw;
     margin: -1rem;
-    box-shadow: 0 0 1000px 2rem hsl(0, 0%, 0%);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 50%);
 }
 
 nav[data-is-hidden="true"] {
@@ -140,7 +141,7 @@ article {
     padding: 1.325rem;
 }
 
-.new-articles > article {
+.new-articles>article {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -154,6 +155,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .row-article {
@@ -162,7 +164,7 @@ article {
     gap: 1.5rem;
 }
 
-.row-article > img {
+.row-article>img {
     max-width: 25%;
 }
 
