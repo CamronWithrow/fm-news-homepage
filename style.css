@@ -27,10 +27,17 @@
 }
 
 body {
+    position: relative;
     color: var(--fc-body-copy);
     background-color: var(--clr-off-white);
     font-size: var(--fs-body-copy);
     padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 header {
@@ -52,6 +59,10 @@ header {
 
 img {
     max-width: 100%;
+}
+
+p {
+    line-height: 1.75;
 }
 
 a {
@@ -87,13 +98,12 @@ article {
 button {
     background-color: var(--clr-soft-red);
     border: none;
-    font: inherit;
-    padding: 1rem;
+    color: var(--fc-heading-inverted);
     font-weight: var(--fw-bold);
-}
-
-.row-article {
-    flex-direction: row;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    max-width: 55%;
 }
 
 .new-articles {
@@ -115,14 +125,22 @@ button {
 .other-articles {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.other-articles article {
+.row-article {
     display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.row-article > img {
+    max-width: 25%;
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
     font-size: 11px;
     text-align: center;
 }
